@@ -1,0 +1,6 @@
+name: AnnouncesModifier
+version: 1.0.0
+author: Steellgold
+description: Edit your announces as you wish
+main: Steellgold\AnnouncesModifier\AM
+api: 3.0.0
