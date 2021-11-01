@@ -1,4 +1,4 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Steellgold/DamageModifier
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/HiroshimaTeam/AnnouncesModifier
 build-by-default: true
 branches:
 - main
