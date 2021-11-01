@@ -1,5 +1,5 @@
 # AnnouncesModifier
-⚔️ Modify the damage to your favorite items as you see fit
+⚔️ Edit your announces as you wish
 
 # Features
 - Change the default command messages (SAY and ME) which are both unchangeable from pocketmine.yml
