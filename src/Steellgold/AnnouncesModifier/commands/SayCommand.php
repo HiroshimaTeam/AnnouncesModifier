@@ -2,15 +2,20 @@
 
 namespace Steellgold\AnnouncesModifier\commands;
 
+use pocketmine\block\Block;
+use pocketmine\block\BlockIds;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\command\PluginIdentifiableCommand;
 use pocketmine\command\utils\CommandException;
+use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\Player;
+use pocketmine\plugin\Plugin;
 use pocketmine\Server;
 use pocketmine\utils\Config;
 use Steellgold\AnnouncesModifier\AM;
 
-class SayCommand extends Command{
+class SayCommand  extends Command implements PluginIdentifiableCommand {
     public $config;
 
     public function __construct(string $name, string $description = "", string $usageMessage = null, array $aliases = []) {
@@ -34,8 +39,11 @@ class SayCommand extends Command{
             $prefix = $this->config["types"]["server"]["show"];
             $message = implode(" ", $args);
         }
-
         Server::getInstance()->broadcastMessage(str_replace(array("{PREFIX}","{MESSAGE}"),array($prefix, $message),$this->config["message"]));
         return true;
+    }
+
+    public function getPlugin(): Plugin {
+        return AM::getInstance();
     }
 }

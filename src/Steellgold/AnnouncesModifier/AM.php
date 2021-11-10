@@ -42,6 +42,7 @@ class AM extends PluginBase {
         return self::$instance;
     }
 
+
     public static function setInstance($instance): void {
         self::$instance = $instance;
     }
