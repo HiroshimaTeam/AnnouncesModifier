@@ -1,6 +1,7 @@
 # AnnouncesModifier
 ⚔️ Edit your announces as you wish
 
+Modify the texts that the basic commands send to make the texts of your server ads more attractive
 # Features
 - Change the default command messages (SAY and ME) which are both unchangeable from pocketmine.yml
 - Assign tags to the say command which will allow you to change the prefix of the message!
